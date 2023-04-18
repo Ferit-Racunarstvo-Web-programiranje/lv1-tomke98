@@ -1,0 +1,472 @@
+
+ 
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --primary: #5b36ee;
+  --background: white;
+  --background2: #eff1f1ce;
+}
+
+* {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+html, body {
+    max-width: 100%;
+    max-height:auto ;
+    overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 900;
+}
+
+h1 em {
+  font-size: 1em;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 900;
+}
+
+p {
+  font-size: 20px;
+  line-height: 2em;
+}
+
+
+header {
+  position:relative;
+  width: 100%;
+  height: 120px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.1);
+  z-index: 6;
+}
+
+header img {
+  height: auto;
+  width: auto;
+  cursor: pointer;
+}
+
+.container .self-presentation-container {
+  background-color: #f5fcff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 100px;
+  z-index: -1;
+}
+.get-in-touch-button {
+  padding: 25px;
+  align-self: flex-start;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.self-presentation-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+nav a {
+  margin: 16px;
+  padding: 16px;
+}
+
+.home {
+  color: var(--primary);
+}
+
+.contact-me-button {
+  font-size: 1.1em;
+  padding: 16px;
+  border-radius: 5px;
+  border-color: var(--primary);
+  color: var(--primary);
+  background-color: #f5fcff;
+}
+
+.my-skills {
+  padding: 100px;
+}
+
+.skill-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 32px;
+}
+
+
+
+
+.card {
+  padding: 32px;
+  background-color: #f5fcff;
+  border-radius: 10px;
+}
+
+.card img {
+  padding: 5px;
+  height: 48px;
+  width: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  padding-top: 24px;
+}
+
+.aboutMe {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+}
+
+.aboutMe img {
+  width: 800px;
+  height: auto;
+}
+
+.aboutMe .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 42px;
+  padding: 100px;
+}
+
+.portfolio-cards .card{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0px 5px 32px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  
+
+}
+
+.portfolio-cards .card img{
+  height: 400px;
+  width: auto;
+  border-radius: 8px;
+
+}
+
+.begin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px 100px 0px 100px;
+}
+.visit-dribble-button {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #e62872;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 10px;
+  color: white;
+  line-height: 24px;
+}
+.visit-dribble-button img {
+  padding: 12px;
+  height: 32px;
+  width: auto;
+}
+
+.testimonials {
+  padding: 100px;
+  background-color: var(--background2);
+  
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 80px;
+}
+
+.testi-cards .card{
+  padding: 24px;
+  border-radius: 10px;
+  border: 2px solid #006b6a;
+
+}
+
+
+.user img:first-child {
+  height: 75px;
+  width: auto;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25px;
+}
+.user-info p {
+  line-height: 0.5em;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.form-item {
+  width: 500px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.form-item input,
+textarea {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1.3px solid var(--primary);
+}
+.form-item label {
+  line-height: 150%;
+  padding: 8px 0px;
+}
+
+.form-row {
+  display: flex;
+  flex: row;
+}
+
+.form-item select {
+  width: 1016px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1.3px solid var(--primary);
+}
+.form-item textarea {
+  width: 982px;
+  height: 240px;
+}
+
+#terms {
+  margin: 16px 8px;
+  transform: scale(1.4);
+}
+
+form button {
+  margin: 0;
+  position: absolute;
+  left: 46.5%;
+  padding: 18px 40px;
+  background: var(--primary);
+  border-radius: 10px;
+  color: white;
+  line-height: 24px;
+}
+footer {
+  background-color: var(--background2);
+  width: 100%;
+  height: 120px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer div:first-child img {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+footer div:last-child img {
+  height: 24px;
+  width: auto;
+}
+
+hr {
+  color: var(--background2);
+  position: relative;
+  padding: 0px;
+  left: 6%;
+  width: 88%;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  top: 0px;
+  margin: 0px;
+}
+.footer {
+  padding: 50px;
+  background-color: var(--background2);
+  width: 1920px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50%;
+}
+.settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 100px;
+}
+.settings p {
+  padding: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  cursor: pointer;
+}
+.settings p:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.footer em {
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 2em;
+}
+.footer em:hover {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+  h1{
+    font-size: 2em;
+  }
+  h2{
+    font-size: 1.5em;
+  }
+  h3{
+    font-size: 1.1em;
+  }
+  header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+  }
+  header a{
+    padding: 30px;
+  }
+  nav{
+    text-align: center;
+    line-height: 3em;
+    width: 40%;
+  }
+  header img{
+    width: 50%;
+    height: auto;
+    padding: 30px;
+  }
+  .container .landing{
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+  }
+  .skills-cards{
+    flex-direction: column;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .portfolio-cards{
+    flex-direction: column;
+  }
+  .testimonial-cards{
+    flex-direction: column;
+  }
+  .landing-contact{
+    align-items: center;
+  }
+  .form-item{
+    width: 259px;
+  }
+  .form-item select{
+    width: 534px;
+  }
+  .form-item textarea{
+    width: 500px;
+  }
+  form button{
+    left: 40%;
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .settings{
+    flex-direction: column;
+    width: 130px;
+    text-align: center;
+  }
+  footer{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+  }
+  footer div{
+    padding: 20px;
+  }
+}
